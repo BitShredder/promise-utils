@@ -1,0 +1,32 @@
+{
+  "name": "promise-utils",
+  "version": "1.0.0",
+  "description": "Promised based utilities to extend native functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitShredder/promise-utils.git"
+  },
+  "keywords": [
+    "promise",
+    "utilities",
+    "javascript",
+    "node"
+  ],
+  "author": "Phil Ewington",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BitShredder/promise-utils/issues"
+  },
+  "homepage": "https://github.com/BitShredder/promise-utils#readme",
+  "devDependencies": {
+    "editorconfig": "^0.15.3",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2"
+  }
+}
