@@ -1,4 +1,4 @@
-const PromiseTimeoutError = require('./Error/PromiseTimeoutError');
+const PromiseTimeoutError = require('../Errors/PromiseTimeoutError');
 
 /**
  * Creates a Promise with a timeout
@@ -16,7 +16,7 @@ function TimedPromise (promise, timeout) {
             if (this.onTimeout) {
                 this.onTimeout.call(this);
             }
-            reject(this.raiseError());
+            reject(new this.Error());
         }, timeout);
 
         promise.then(

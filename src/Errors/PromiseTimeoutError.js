@@ -10,7 +10,7 @@ function PromiseTimeoutError () {
     }
 
     Error.call(this);
-    this.stack = Error.stack();
+    this.stack = Error.stack;
     this.message = 'Promise timed out';
 }
 

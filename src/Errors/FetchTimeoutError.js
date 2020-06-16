@@ -10,7 +10,7 @@ function FetchTimeoutError () {
     }
 
     this.call(Error);
-    this.stack = Error.stack();
+    this.stack = Error.stack;
     this.message = 'Fetch request timed out';
 }
 
