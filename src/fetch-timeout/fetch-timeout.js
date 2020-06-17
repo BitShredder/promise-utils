@@ -1,5 +1,4 @@
 const TimedPromise = require('../promise-timeout');
-const FetchTimeoutError = require('../Errors/FetchTimeoutError');
 
 /**
  * @typedef {Object} FetchOptions
