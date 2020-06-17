@@ -26,3 +26,5 @@ node_modules/
 # VSCode
 .vscode
 .vscode-test
+
+dist/
