@@ -4,6 +4,18 @@ import { uglify } from 'rollup-plugin-uglify';
 
 export default [
     {
+        input: 'src/promise-timeout/index.js',
+        output: {
+            file: 'dist/promise-timeout.cjs',
+            name: 'promise-timeout',
+            format: 'cjs',
+            exports: 'named',
+        },
+        plugins: [
+            commonjs(),
+        ],
+    },
+    {
         input: 'src/index.js',
         output: {
             file: 'dist/promise-utils.js',
