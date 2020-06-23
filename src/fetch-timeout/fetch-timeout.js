@@ -25,13 +25,20 @@ const TimedPromise = require('../promise-timeout');
  * @param {Number} timeout
  * @returns TimedPromise
  */
-function fetchWithTimeout (url, options, timeout) {
+function fetchWithTimeout (url, options, timeout = 15) {
 
-    let controller = null;
-
-    if (!options.signal) {
-        controller = new AbortController();
+    if (arguments.length < 3
+        || typeof url !== 'string'
+        || typeof options !== 'object'
+        || typeof timeout !== 'number'
+        || !options.method
+    ) {
+        throw new TypeError('Invalid arguments');
     }
+
+    const controller = !options.signal
+        ? new AbortController()
+        : null;
 
     const { signal = options.signal } = controller;
 
