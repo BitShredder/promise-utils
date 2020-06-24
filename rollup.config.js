@@ -1,12 +1,11 @@
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
-import { uglify } from 'rollup-plugin-uglify';
 
 export default [
     {
         input: 'src/promise-timeout/index.js',
         output: {
-            file: 'dist/promise-timeout.cjs',
+            file: 'dist/promise-timeout.cjs.js',
             name: 'promise-timeout',
             format: 'cjs',
             exports: 'named',
@@ -18,14 +17,13 @@ export default [
     {
         input: 'src/index.js',
         output: {
-            file: 'dist/promise-utils.js',
+            file: 'dist/promise-utils.esm.js',
             name: 'promise-utils',
             format: 'umd',
             exports: 'named',
         },
         plugins: [
             commonjs(),
-            uglify(),
             babel({
                 babelrc: false,
                 presets: [
