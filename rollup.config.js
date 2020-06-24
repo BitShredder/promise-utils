@@ -1,5 +1,6 @@
-import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
+import babel from '@rollup/plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 
 export default [
     {
@@ -25,6 +26,7 @@ export default [
         plugins: [
             commonjs(),
             babel({
+                babelHelpers: 'bundled',
                 babelrc: false,
                 presets: [
                     ['@babel/preset-env'],
