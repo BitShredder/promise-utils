@@ -1,4 +1,4 @@
-const TimedPromise = require('../promise-timeout');
+const TimedPromise = require('../promise-timeout/promise-timeout');
 
 /**
  * Fetch API

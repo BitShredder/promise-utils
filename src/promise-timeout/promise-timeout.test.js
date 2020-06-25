@@ -5,7 +5,7 @@ const chai = require('chai');
 const { expect } = require('chai');
 const chaiAsPromised = require('chai-as-promised');
 
-const TimedPromise = require('.');
+const TimedPromise = require('./promise-timeout');
 const PromiseTimeoutError = require('../Errors/PromiseTimeoutError');
 
 chai.use(chaiAsPromised);

@@ -35,7 +35,4 @@ function TimedPromise (promise, timeout) {
 TimedPromise.prototype.Error = PromiseTimeoutError;
 TimedPromise.prototype.onTimeout = null;
 
-/**
- * @module TimedPromise
- */
 module.exports = TimedPromise;

@@ -7,7 +7,7 @@ const chaiAsPromised = require('chai-as-promised');
 const sinon = require('sinon');
 const jsdom = require('mocha-jsdom');
 
-const fetchWithTimeout = require('.');
+const fetchWithTimeout = require('./fetch-timeout');
 const PromiseTimeoutError = require('../Errors/PromiseTimeoutError');
 
 chai.use(chaiAsPromised);

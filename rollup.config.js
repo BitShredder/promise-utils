@@ -3,12 +3,12 @@ import commonjs from '@rollup/plugin-commonjs';
 
 export default [
     {
-        input: 'src/promise-timeout/index.js',
+        input: 'src/promise-timeout/promise-timeout.js',
         output: {
             file: 'dist/promise-timeout.cjs.js',
-            name: 'promise-timeout',
+            name: 'TimedPromise',
             format: 'cjs',
-            exports: 'named',
+            exports: 'auto',
         },
         plugins: [
             commonjs(),
