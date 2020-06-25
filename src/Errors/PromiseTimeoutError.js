@@ -15,6 +15,6 @@ function PromiseTimeoutError () {
 }
 
 PromiseTimeoutError.prototype = Object.create(Error.prototype);
-PromiseTimeoutError.name = 'PromiseTimeoutError';
+PromiseTimeoutError.prototype.name = 'PromiseTimeoutError';
 
 module.exports = PromiseTimeoutError;
